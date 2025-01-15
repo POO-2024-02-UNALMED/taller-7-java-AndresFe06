@@ -1,44 +1,50 @@
 package comunicacion;
 
-public class Fabula extends Escrito{
-    String ensenanzas; 
+public class Fabula extends Escrito {
+    String ensenanzas;
     String interpretacion;
 
-
-    public Fabula(String origen, String titulo, String autor, int paginas, String ensenanzas, String interpretacion){
+    public Fabula(String origen, String titulo, String autor, int paginas, String ensenanzas, String interpretacion) {
         super(origen, titulo, autor, paginas);
         this.ensenanzas = ensenanzas;
         this.interpretacion = interpretacion;
     }
 
     @Override
-    public int palabrasTotales(int palabrasPagina){
+    public int palabrasTotales(int palabrasPagina) {
         return getPaginas() * palabrasPagina * 1;
     }
+
     @Override
-    public String  interpretacion(){
+    public String interpretacion() {
         return this.interpretacion;
-    }   
-    @Override
-    public String toString(){
-        return  this.getOrigen() + "\n" +
-                this.getTitulo() + "\n" +
-                this.getAutor() + "\n" +
-                this.getPaginas() + "\n" +
-                this.ensenanzas;
     }
+
+    @Override
+    public String toString() {
+        return this.getOrigen() + "\n" +
+               this.getTitulo() + "\n" +
+               this.getAutor() + "\n" +
+               this.getPaginas() + "\n" +
+               this.ensenanzas;
+    }
+
     public String getEnsenanza() {
         return ensenanzas;
     }
-    public void setEnsenanza(String enseñanzas) {
-        this.ensenanzas = enseñanzas;
+
+    public void setEnsenanza(String ensenanzas) {
+        this.ensenanzas = ensenanzas;
     }
+
     public String getInterpretacion() {
         return interpretacion;
     }
+
     public void setInterpretacion(String interpretacion) {
         this.interpretacion = interpretacion;
     }
 }
+
     
 
