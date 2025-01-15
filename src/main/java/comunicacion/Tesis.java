@@ -1,6 +1,4 @@
 package comunicacion;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 public class Tesis extends Escrito  {
     String idea; 
     String[] argumentos;
