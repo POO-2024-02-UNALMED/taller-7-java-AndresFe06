@@ -29,7 +29,7 @@ public class Tesis extends Escrito  {
                 this.getAutor() + "\n" +
                 this.getPaginas() + "\n" +
                 this.idea + "\n" +
-                this.argumentos + "\n" +
+                this.argumentos.length + "\n" +
                 this.conclusion + "\n" +
                 this.referencias;
     }
